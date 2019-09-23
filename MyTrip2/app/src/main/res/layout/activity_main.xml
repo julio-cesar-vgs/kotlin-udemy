@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorLightGray"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <EditText
+        style="@style/mCustomEditText"
+        android:id="@+id/editDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/distancia"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:text="@string/total_de_quilometros"
+        android:textAllCaps="true"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="10sp"/>
+
+    <EditText
+        style="@style/mCustomEditText"
+        android:id="@+id/editPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/preco"
+        android:inputType="number"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:text="@string/pre_o_por_litro"
+        android:textAllCaps="true"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="10sp"/>
+
+    <EditText
+        style="@style/mCustomEditText"
+        android:id="@+id/editAutonomy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/autonomia"
+        android:inputType="number"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:text="@string/km_por_litro"
+        android:textAllCaps="true"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/seu_gasto_total_ser_de"
+        android:textAllCaps="true"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#fda6a6"
+        android:textSize="35sp"
+        android:text="R$: 0,00"
+        />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        android:layout_margin="15dp"
+        android:textAllCaps="true"
+        android:padding="20dp"
+        android:textColorHint="@color/colorLightGray"
+        android:textSize="26sp"
+        android:background="@drawable/round_btn"
+        />
+    </LinearLayout>
+
+</ScrollView>
